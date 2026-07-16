@@ -1,12 +1,15 @@
-🎓 Student Grade Tracker
-    A simple Java console application developed as Task 1 for the CodeAlpha Java Programming Internship.
-The application allows users to enter student names and grades, stores the data using an Arraylist, 
-and generates a summary report including the average, highest, and lowest scores.
+# 🎓 Student Grade Tracker
 
-📌 Features
+A simple **Java console application** developed as **Task 1** for the **CodeAlpha Java Programming Internship**.
+
+The application allows users to enter student names and grades, stores the data using an `ArrayList`, and generates a summary report including the average, highest, and lowest scores.
+
+---
+
+## 📌 Features
 
 * Add multiple students and their grades
-* Store student records using Arraylist
+* Store student records using `ArrayList`
 * Calculate:
 
   * 📊 Average score
@@ -15,23 +18,33 @@ and generates a summary report including the average, highest, and lowest scores
 * Display a formatted summary report
 * Simple and user-friendly console interface
 
-🛠️ Technologies Used
+---
+
+## 🛠️ Technologies Used
 
 * Java
 * Object-Oriented Programming (OOP)
 * ArrayList
 * Scanner Class
 
-📂 Project Structure
+---
+
+## 📂 Project Structure
+
+```
 CodeAlpha_StudentGradeTracker.java
+```
 
 The project contains:
 
-* Student class – Stores student name and grade.
-* CodeAlpha_StudentGradeTracker class – Handles user input, calculations, and report generation.
+* `Student` class – Stores student name and grade.
+* `CodeAlpha_StudentGradeTracker` class – Handles user input, calculations, and report generation.
 
-💻 Sample Output
+---
 
+## 💻 Sample Output
+
+```
 ========== STUDENT GRADE TRACKER ==========
 
 Enter number of students: 3
@@ -59,8 +72,11 @@ Charlie              95.00
 Average Score : 86.67
 Highest Score : 95.00 (Charlie)
 Lowest Score  : 76.00 (Bob)
+```
 
-🎯 Learning Outcomes
+---
+
+## 🎯 Learning Outcomes
 
 This project demonstrates:
 
@@ -71,3 +87,9 @@ This project demonstrates:
 * User input handling
 * Basic statistical calculations
 * Formatted console output
+
+---
+
+## 📜 Internship
+
+This project was developed as part of the **CodeAlpha Java Programming Internship**.
