@@ -15,7 +15,7 @@ public class CodeAlpha_StudentGradeTracker {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("====== Student Project Tracker ======");
+        System.out.println("\n========== STUDENT GRADE TRACKER  ==========");
 
         ArrayList<Student> students = new ArrayList<>();
 
@@ -37,5 +37,46 @@ public class CodeAlpha_StudentGradeTracker {
             students.add(new Student(name, grade));
         }
         sc.close();
+
+        // Calculate statistics
+        double total = 0;
+        double highest = students.get(0).grade;
+        double lowest = students.get(0).grade;
+        String highestStudent = students.get(0).name;
+        String lowestStudent = students.get(0).name;
+
+        for (Student s : students) {
+            total += s.grade;
+
+            if (s.grade > highest) {
+                highest = s.grade;
+                highestStudent = s.name;
+            }
+
+            if (s.grade < lowest) {
+                lowest = s.grade;
+                lowestStudent = s.name;
+            }
+        }
+
+        double average = total / students.size();
+
+        // Summary Report
+        System.out.println("\n========== STUDENT SUMMARY REPORT ==========");
+        System.out.printf("%-20s %-10s%n", "Student Name", "Grade");
+        System.out.println("--------------------------------------------");
+
+        for (Student s : students) {
+            System.out.printf("%-20s %-10.2f%n", s.name, s.grade);
+        }
+
+        System.out.println("--------------------------------------------");
+        System.out.printf("Average Score : %.2f%n", average);
+        System.out.printf("Highest Score : %.2f (%s)%n", highest, highestStudent);
+        System.out.printf("Lowest Score  : %.2f (%s)%n", lowest, lowestStudent);
+        System.out.println("\n");
+
+        sc.close();
     }
+
 }
